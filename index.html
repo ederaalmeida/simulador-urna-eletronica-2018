@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica Simulador</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="urna">
+        <div class="urna-area--superior"></div>
+        <div class="urna-area--frontal">
+            <div class="tela">
+                <div class="tela-left">
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>Senador</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="digitos pisca"></div>
+                        <div class="digitos"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Nome:Fulano de Tal<br/> Partido: PTN<br/>Vice-Governandor: Beltrano de Tal<br/> 1ª suplente:Mulano de Tal<br/> 2ª suplente:Ciclano de Tal
+                    </div>
+                    <div class="d-1-5">
+                        Aperte a tecla:<br/> CONFIRMAR para CONFIRMAR este voto<br/> CORRIGE para REINICIAR este voto
+                    </div>
+                </div>
+                <div class="tela-right">
+                    <div class="d-2-imagem">
+                        <img src="images/911_natacao.jpg" alt="" />Senador
+                    </div>
+                    <div class="d-2-imagem small">
+                        <img src="images/911_esgrima.jpg" alt="" />1ªSuplente
+                    </div>
+                    <div class="d-2-imagem small">
+                        <img src="images/911_rugbi.jpg" alt="" />2ªSuplente
+                    </div>
+                </div>
+            </div>
+            <div class="teclado">
+                <div class="teclas-area--teclado">
+                    <div class="teclado-area--teclas" onclick="clicou('1')">1</div>
+                    <div class="teclado-area--teclas" onclick="clicou('2')">2</div>
+                    <div class="teclado-area--teclas" onclick="clicou('3')">3</div>
+                    <div class="teclas-area--teclado">
+                        <div class="teclado-area--teclas" onclick="clicou('4')">4</div>
+                        <div class="teclado-area--teclas" onclick="clicou('5')">5</div>
+                        <div class="teclado-area--teclas" onclick="clicou('6')">6</div>
+                    </div>
+                    <div class="teclas-area--teclado">
+                        <div class="teclado-area--teclas" onclick="clicou('7')">7</div>
+                        <div class="teclado-area--teclas" onclick="clicou('8')">8</div>
+                        <div class="teclado-area--teclas" onclick="clicou('9')">9</div>
+                    </div>
+                    <div class="teclas-area--teclado">
+                        <div class="teclado-area--teclas" onclick="clicou('0')">0</div>
+                    </div>
+                    <div class="teclas-area--teclado">
+                        <div class="teclado-area--teclas--BRANCO" onclick="branco()">BRANCO</div>
+                        <div class="teclado-area--teclas--CORRIGE" onclick="corrige()">CORRIGE</div>
+                        <div class="teclado-area--teclas--CONFIRMAR" onclick="confirma()">CONFIRMAR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='etapas.js'></script>
+    <script src='script.js'></script>
+
+</body>
+
+</html>
